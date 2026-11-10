@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portafolio personal de Miguel Ángel. Perfil, intereses, habilidades, metas y proyectos.">
+    <meta name="theme-color" content="#101827">
+
+    <title>Mi Página Personal | Miguel Ángel</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+
+    <script>
+        // Detección básica del tipo de dispositivo
+        document.documentElement.classList.add(
+            /Android|iPhone|iPad|Mobile/i.test(navigator.userAgent)
+            ? "dispositivo-movil"
+            : "dispositivo-escritorio"
+        );
+    </script>
+
+    <!-- Biblioteca jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="device-message" id="deviceMessage">
+        📱 Portafolio optimizado para tu dispositivo
+    </div>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="logo">
+            <span>MA.</span>
+            <div>
+                <h1>Miguel Ángel</h1>
+                <p>Mi portafolio personal</p>
+            </div>
+        </div>
+
+        <div class="header-actions">
+            <button id="themeToggle" class="theme-btn"
+                    aria-label="Cambiar tema">
+                ☀️ / 🌙
+            </button>
+
+            <button id="hamburgerBtn" class="hamburger"
+                    aria-label="Abrir menú"
+                    aria-expanded="false">
+                ☰
+            </button>
+        </div>
+
+        <nav id="mainMenu" class="nav-menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#intereses">Intereses</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#metas">Metas</a>
+            <a href="#filtro">Explorar</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PRESENTACIÓN -->
+        <section id="inicio" class="hero section reveal">
+            <div class="hero-content">
+                <span class="tag">PORTAFOLIO PERSONAL</span>
+
+                <h2>¡Hola! Soy <span>Miguel Ángel</span></h2>
+
+                <h3>Estudiante de Ingeniería de Sistemas</h3>
+
+                <p>
+                    Bienvenido a mi espacio personal. Aquí comparto
+                    mis intereses, habilidades, experiencias,
+                    objetivos y mi camino de aprendizaje en el
+                    mundo de la tecnología.
+                </p>
+
+                <a href="#sobre-mi" class="primary-btn">
+                    Conocer más →
+                </a>
+            </div>
+
+            <div class="hero-decoration">
+                <div class="profile-circle">MA</div>
+                <span class="floating one">💻</span>
+                <span class="floating two">🚀</span>
+                <span class="floating three">🎯</span>
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ -->
+        <section id="sobre-mi" class="section reveal">
+            <div class="section-title">
+                <span>01 / PERFIL</span>
+                <h2>Sobre mí</h2>
+                <p>Conociendo un poco más de mi persona.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Mi presentación</h3>
+                <p>
+                    Soy Miguel Ángel, estudiante de Ingeniería de
+                    Sistemas. Me interesa aprender nuevas tecnologías,
+                    desarrollar soluciones informáticas y fortalecer
+                    mis conocimientos en programación y diseño web.
+                </p>
+                <p>
+                    Considero que la constancia, la creatividad y
+                    el aprendizaje continuo son fundamentales para
+                    alcanzar objetivos personales y profesionales.
+                </p>
+            </div>
+        </section>
+
+        <!-- INTERESES -->
+        <section id="intereses" class="section reveal">
+            <div class="section-title">
+                <span>02 / PERSONALIDAD</span>
+                <h2>Mis intereses y aficiones</h2>
+            </div>
+
+            <div class="cards-grid">
+                <article class="info-card">
+                    <span class="card-icon">💻</span>
+                    <h3>Tecnología</h3>
+                    <p>Programación, informática y desarrollo web.</p>
+                </article>
+
+                <article class="info-card">
+                    <span class="card-icon">🎵</span>
+                    <h3>Música</h3>
+                    <p>Disfrutar de la música y descubrir artistas.</p>
+                </article>
+
+                <article class="info-card">
+                    <span class="card-icon">⚽</span>
+                    <h3>Deportes</h3>
+                    <p>Entretenimiento y actividades deportivas.</p>
+                </article>
+
+                <article class="info-card">
+                    <span class="card-icon">🌎</span>
+                    <h3>Viajes</h3>
+                    <p>Conocer lugares y nuevas experiencias.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="habilidades" class="section reveal">
+            <div class="section-title">
+                <span>03 / CONOCIMIENTOS</span>
+                <h2>Mis habilidades</h2>
+            </div>
+
+            <div class="cards-grid">
+                <article class="info-card">
+                    <span class="card-icon">🌐</span>
+                    <h3>Desarrollo Web</h3>
+                    <p>HTML, CSS y JavaScript.</p>
+                </article>
+
+                <article class="info-card">
+                    <span class="card-icon">💻</span>
+                    <h3>Programación</h3>
+                    <p>Lógica de programación y C++.</p>
+                </article>
+
+                <article class="info-card">
+                    <span class="card-icon">🗄️</span>
+                    <h3>Bases de Datos</h3>
+                    <p>Modelado y gestión de información.</p>
+                </article>
+
+                <article class="info-card">
+                    <span class="card-icon">🤝</span>
+                    <h3>Trabajo en equipo</h3>
+                    <p>Colaboración y resolución de problemas.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- METAS -->
+        <section id="metas" class="section reveal">
+            <div class="section-title">
+                <span>04 / PROYECCIÓN</span>
+                <h2>Mis metas y sueños</h2>
+            </div>
+
+            <div class="cards-grid">
+                <article class="info-card">
+                    <h3>🎓 Meta académica</h3>
+                    <p>Concluir mi formación en Ingeniería de Sistemas.</p>
+                </article>
+
+                <article class="info-card">
+                    <h3>🚀 Meta profesional</h3>
+                    <p>Desarrollar proyectos tecnológicos de calidad.</p>
+                </article>
+
+                <article class="info-card">
+                    <h3>🌟 Sueños</h3>
+                    <p>Crecer profesionalmente y alcanzar nuevos desafíos.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- FILTRO DE TRES CAPAS -->
+        <section id="filtro" class="section reveal">
+            <div class="section-title">
+                <span>05 / INTERACCIÓN DINÁMICA</span>
+                <h2>Explora mi perfil</h2>
+                <p>Selecciona las tres capas para encontrar información.</p>
+            </div>
+
+            <div class="info-card filter-card">
+
+                <label for="areaSelect">Capa 1: Área</label>
+                <select id="areaSelect">
+                    <option value="">Selecciona un área</option>
+                    <option value="academico">Área académica</option>
+                    <option value="personal">Área personal</option>
+                    <option value="profesional">Área profesional</option>
+                </select>
+
+                <label for="moduleSelect">Capa 2: Categoría</label>
+                <select id="moduleSelect" disabled>
+                    <option value="">Selecciona una categoría</option>
+                </select>
+
+                <label for="itemSelect">Capa 3: Elemento</label>
+                <select id="itemSelect" disabled>
+                    <option value="">Selecciona un elemento</option>
+                </select>
+
+                <div id="filterResult" class="filter-result" aria-live="polite">
+                    Selecciona las opciones anteriores para visualizar
+                    el resultado.
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO -->
+        <section id="contacto" class="section reveal">
+            <div class="section-title">
+                <span>06 / COMUNICACIÓN</span>
+                <h2>Formulario de contacto</h2>
+                <p>Déjame un mensaje o consulta.</p>
+            </div>
+
+            <form id="contactForm" class="info-card" novalidate>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre"
+                           placeholder="Ej. Juan Pérez"
+                           autocomplete="name">
+                    <small class="error" id="nombreError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo"
+                           placeholder="correo@ejemplo.com"
+                           autocomplete="email">
+                    <small class="error" id="correoError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="5"
+                              placeholder="Escribe tu mensaje..."></textarea>
+                    <small class="error" id="mensajeError"></small>
+                </div>
+
+                <label class="check-label">
+                    <input type="checkbox" id="acepto">
+                    Confirmo que los datos ingresados son correctos.
+                </label>
+
+                <small class="error" id="aceptoError"></small>
+
+                <button type="submit" class="primary-btn">
+                    Enviar mensaje
+                </button>
+
+                <div id="formResponse" aria-live="polite"></div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer reveal">
+        <h3>Miguel Ángel</h3>
+        <p>Portafolio personal | Ingeniería de Sistemas</p>
+        <p>© 2026 - Todos los derechos reservados.</p>
+        <span id="pwaStatus">Comprobando aplicación...</span>
+    </footer>
+
+    <!-- jQuery y funcionalidades -->
+</body>
+</html>
