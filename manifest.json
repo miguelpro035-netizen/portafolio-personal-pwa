@@ -1,0 +1,21 @@
+{
+    "id": "./",
+    "name": "Portafolio Personal - Miguel Ángel",
+    "short_name": "Mi Portafolio",
+    "description": "Portafolio personal de Miguel Ángel, estudiante de Ingeniería de Sistemas.",
+    "lang": "es",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background_color": "#101827",
+    "theme_color": "#101827",
+    "icons": [
+        {
+            "src": "./icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        }
+    ]
+}
