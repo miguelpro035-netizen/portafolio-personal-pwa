@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 512 512">
+
+    <rect width="512" height="512"
+          rx="110" fill="#101827"/>
+
+    <rect x="22" y="22" width="468" height="468"
+          rx="95" fill="none"
+          stroke="#f97316" stroke-width="18"/>
+
+    <text x="256" y="300"
+          font-family="Arial, sans-serif"
+          font-size="175"
+          font-weight="bold"
+          text-anchor="middle"
+          fill="#ffffff">MA</text>
+
+    <circle cx="410" cy="105" r="25"
+            fill="#f97316"/>
+
+</svg>
